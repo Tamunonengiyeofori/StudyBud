@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div>
+    <form method="POST" action="">
+        {% crsf_token %}
+        {{form}}
+    </form>
+</div>
+{% endblock content%}
